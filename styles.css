@@ -1,10 +1,32 @@
 * {
     margin: 0;
     padding: 0;
-
+    font-family: 'Quicksand', sans-serif;
+    color: white;
 }
 
 body {
     background-image: url("/img/Weatherbg.jpg");
     background-color: #cccccc;
+
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80% auto;
+    grid-template-areas: 
+    "left right"
+    "bottom bottom";
+
+}
+
+.leftIconGroup {
+    grid-area: left;
+}
+
+.rightIconGroup {
+    grid-area: right;
+}
+
+.bottomSection {
+    grid-area: bottom;
 }
