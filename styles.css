@@ -10,23 +10,27 @@ body {
     background-color: #cccccc;
 
     background-size: cover;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 80% auto;
-    grid-template-areas: 
-    "left right"
-    "bottom bottom";
+    display: flex;
+    flex-direction: column;
+
 
 }
 
-.leftIconGroup {
-    grid-area: left;
+.topBar {
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    height: 75px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
-.rightIconGroup {
-    grid-area: right;
+.refresh {
+    margin-left: auto;
+    padding-right: 20px;
 }
 
-.bottomSection {
-    grid-area: bottom;
+.forecast {
+    font-weight: 700;
+    font-size: 50px;
 }
