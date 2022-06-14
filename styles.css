@@ -95,7 +95,7 @@ body {
 
 .location {
     font-weight: 600;
-    font-size: 60px;
+    font-size: 70px;
     align-self: center;
 
 }
@@ -162,5 +162,14 @@ body {
 }
 
 #icon {
-    display: inline;
+    display: inline-block;
+    
+}
+
+.temperature {
+    display: inline-block;
+}
+
+.loading {
+    visibility: hidden;
 }
