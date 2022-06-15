@@ -48,5 +48,13 @@ async function getData(city) {
     
     document.querySelector('.leftIconGroup').classList.remove('loading');
     document.querySelector('.rightIconGroup').classList.remove('loading');
+
+
+    // console.log(new Date.toDateString());
+    const date = new Date();
+    document.getElementById('date').textContent = new Date().toDateString();
+
+    // console.log(date.toDateString());
 }
+
 
